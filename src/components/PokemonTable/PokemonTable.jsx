@@ -9,6 +9,7 @@ const PokemonTable = ({ data }) => {
           <th>ID</th>
           <th>Name</th>
           <th>Type</th>
+          <th>Health</th>
           <th>Attack</th>
           <th>Defense</th>
           <th>Special Attack</th>
@@ -22,6 +23,7 @@ const PokemonTable = ({ data }) => {
             <td>{pokemon.id}</td>
             <td>{pokemon.name}</td>
             <td>{pokemon.type}</td>
+            <td>{pokemon.hp}</td>
             <td>{pokemon.attack}</td>
             <td>{pokemon.defense}</td>
             <td>{pokemon.special_attack}</td>
