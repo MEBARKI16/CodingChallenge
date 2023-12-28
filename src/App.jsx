@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import PokemonTable from './components/PokemonTable';
+import PokemonTable from './components/PokemonTable/PokemonTable';
 import { fetchPokemonData } from './services/pokemonService';
 
 const App = () => {
