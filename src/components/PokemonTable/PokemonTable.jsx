@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import PaginationControl from './PaginationControl';
-import Table from './Table';
+import PaginationControl from './PaginationControl/PaginationControl';
+import styles from './PokemonTable.module.css'
+import Table from './Table/Table';
 
 
 const PokemonTable = ({ data }) => {
@@ -18,7 +19,7 @@ const PokemonTable = ({ data }) => {
   };
 
   return (
-    <>
+    <div className={styles.tableGlob}>
       <Table currentItems={currentItems} />
       <PaginationControl
         totalItems={data.length}
@@ -27,7 +28,7 @@ const PokemonTable = ({ data }) => {
         currentPage={currentPage}
         paginate={paginate}
       />
-    </>
+    </div>
   );
 };
 

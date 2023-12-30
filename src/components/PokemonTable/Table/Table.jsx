@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './PokemonTable.module.css';
+import styles from './Table.module.css';
 
 const calculatePower = (pokemon) => {
     return pokemon.hp + pokemon.attack + pokemon.defense +

@@ -1,0 +1,29 @@
+.paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectContainer {
+    margin-right: 20px;
+}
+
+.rowsPerPageDropdown {
+    border: none;
+}
+
+.paginationButton {
+    background-color: white;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.paginationButton:disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+.currentPageInfo {
+    margin: 0 10px;
+}
