@@ -1,13 +1,7 @@
 import React from 'react';
 import styles from './Table.module.css';
 
-const calculatePower = (pokemon) => {
-    return pokemon.hp + pokemon.attack + pokemon.defense +
-        pokemon.special_attack + pokemon.special_defense + pokemon.speed;
-};
-
 const TableRow = React.memo(({ pokemon }) => {
-    const power = calculatePower(pokemon);
     return (
         <tr>
             <td>{pokemon.id}</td>
@@ -19,7 +13,7 @@ const TableRow = React.memo(({ pokemon }) => {
             <td>{pokemon.special_attack}</td>
             <td>{pokemon.special_defense}</td>
             <td>{pokemon.speed}</td>
-            <td>{power}</td>
+            <td>{pokemon.power}</td>
         </tr>
     );
 });
