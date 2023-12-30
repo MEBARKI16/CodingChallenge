@@ -1,0 +1,22 @@
+.filterContainer {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+.inputContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.filterInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

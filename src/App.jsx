@@ -36,7 +36,7 @@ const App = () => {
   const maxPower = Math.max(...filteredData.map(p => p.power));
 
   return (
-    <div className="App">
+    <div className="flex flex-col gap-10 mt-5">
       <Filter
         onSearchChange={handleSearchChange}
         onPowerThresholdChange={handlePowerThresholdChange}
