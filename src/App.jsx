@@ -32,16 +32,18 @@ const App = () => {
     pokemon.name.toLowerCase().includes(searchTerm) &&
     pokemon.power >= powerThreshold
   );
-  const minPower = Math.min(...filteredData.map(p => p.power));
-  const maxPower = Math.max(...filteredData.map(p => p.power));
+  const powers = filteredData.map(p => p.power);
+  const minPower = powers.length > 0 ? Math.min(...powers) : 0;
+  const maxPower = powers.length > 0 ? Math.max(...powers) : 0;
+
 
   return (
     <div className="flex flex-col gap-10 mt-5">
       <Filter
         onSearchChange={handleSearchChange}
         onPowerThresholdChange={handlePowerThresholdChange}
-        minPower={minPower || 0}
-        maxPower={maxPower || 0}
+        minPower={minPower}
+        maxPower={maxPower}
       />
 
       <PokemonTable data={filteredData} />
